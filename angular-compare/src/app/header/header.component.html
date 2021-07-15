@@ -1,0 +1,34 @@
+
+<div class="nav has-shadow">
+  <div class="container">
+    <div class="nav-left">
+      <a routerLink="/" class="nav-item">Compare Company</a>
+    </div>
+
+    <div class="nav-toggle" (click)="toggleNav = !toggleNav;" [ngClass]="{'is-active': toggleNav}">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="nav-right nav-menu" [ngClass]="{'is-active': toggleNav}">
+
+      <a routerLink="/" class="nav-item r-item">Home</a>
+      <a class="nav-item r-item">Features</a>
+      <a class="nav-item r-item">About</a>
+      <a routerLink="/faq" class="nav-item r-item">FAQ</a>
+
+      <div class="nav-item">
+        <p class="control">
+          <a class="button is-primary is-outlined">
+            <span class="icon">
+              <i class="fa fa-download"></i>
+            </span>
+            <span>Join Now</span>
+          </a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
